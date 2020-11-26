@@ -1,0 +1,131 @@
+.ias-module-section {
+    padding: 20px 0;
+}
+
+.ias-module-section .ias-module-title h3,
+.ias-module-section .ias-enquire-title h3,
+.ias-module-section .ias-enquire-demo-form h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0277BD;
+    padding: 10px 0;
+}
+
+/*.ias-module-section .ias-module-title .ias-module-cont p:before {
+    content: "\f105";
+    color: #0277BD;
+    font-size: 20px;
+    font-weight: 900;
+    padding-right: 5px;
+    font-family: 'FontAwesome';
+
+}*/
+
+.ias-module-section .ias-enquire-demo-form .form-control {
+
+    border-radius: 1px;
+}
+
+.ias-module-section .ias-enquire-demo-form .form-control:focus {
+
+    border-color: #dd9713;
+    box-shadow: none;
+}
+
+.ias-module-section .ias-enquire-demo-form .btn-primary {
+
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #0277BD;
+    border-radius: 0;
+    border-color: inherit;
+}
+
+.rounded {
+    border-radius: 10px !important;
+}
+
+.ias-enquire-demo-form .badge-secondary {
+    color: #E53935;
+    background-color: transparent;
+    animation: none;
+}
+
+.ias-enquire-demo-form .badge {
+    padding: 3px 5px;
+    font-size: 14px;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*scroll*/
+.ias-product-table {
+
+    background-color: #880E4F;
+    width: 97%;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #9E9E9E;
+    border-radius: 10px;
+}
+
+#content {
+    overflow-y: scroll;
+    height: 500px;
+}
+
+#content::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.ias-product-table .ias-product-head h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.ias-product-table .ias-product-head .ias-product {
+    background-color: #fff;
+    padding: 5px;
+}
+
+.ias-product-table .ias-product-head .ias-product h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ias-product-table .ias-product-head .ias-product img {
+    display: inline;
+    float: left;
+    width: 50px;
+}
+
+.ias-product-table .ias-product-head .ias-product p {
+    line-height: initial;
+    text-align: justify;
+    margin-bottom: initial;
+}
+
+.ias-module-section .youtube-vid h3{
+font-weight: 600;
+color: #0277BD;
+font-size: 20px;
+}
+
+ 

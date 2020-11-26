@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>jVectorMap demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="jquery-jvectormap-in-mill.js"></script>
+</head>
+<body>
+<div id="map" style="width: 600px; height: 400px"></div>
+  <script>
+      var gdpData = {
+        "IN-AN": "http://www.AN.co.in",
+        "IN-AP": "http://www.AP.co.in",
+        "IN-AR": "http://www.AR.co.in",
+        "IN-AS": "http://www.AS.co.in",
+        "IN-BR": "http://www.BR.co.in",
+        "IN-CH": "http://www.CH.co.in",
+        "IN-CT": "http://www.CT.co.in",
+        "IN-DN": "http://www.DN.co.in",
+        "IN-DD": "http://www.DD.co.in",
+        "IN-DL": "http://www.DL.co.in",
+        "IN-GA": "http://www.GA.co.in",
+        "IN-GJ": "http://www.GJ.co.in",
+        "IN-HR": "http://www.HR.co.in",
+        "IN-HP": "http://www.HP.co.in",
+        "IN-JK": "http://www.JK.co.in",
+        "IN-JH": "http://www.JH.co.in",
+        "IN-KA": "http://www.KA.co.in",
+        "IN-KL": "http://www.KL.co.in",
+        "IN-LD": "http://www.LD.co.in",
+        "IN-MP": "http://www.MP.co.in",
+        "IN-MH": "http://www.MH.co.in",
+        "IN-MN": "http://www.MN.co.in",
+        "IN-ML": "http://www.ML.co.in",
+        "IN-MZ": "http://www.MZ.co.in",
+        "IN-NL": "http://www.NL.co.in",
+        "IN-OR": "http://www.OR.co.in",
+        "IN-PY": "http://www.PY.co.in",
+        "IN-PB": "http://www.PB.co.in",
+        "IN-RJ": "http://www.RJ.co.in",
+        "IN-SK": "http://www.SK.co.in",
+        "IN-TN": "http://www.TN.co.in",
+        "IN-TR": "http://www.TR.co.in",
+        "IN-UP": "http://www.UP.co.in",
+        "IN-UT": "http://www.UT.co.in",
+        "IN-WB": "http://www.WB.co.in"
+      };
+    $(function(){
+
+      $('#map').vectorMap({
+        map: 'in_mill',
+        series: {
+          regions: [{
+            values: gdpData,
+            scale: ['#ff0000', '#000000'],
+            normalizeFunction: 'polynomial'
+          }]
+        },
+        onRegionTipShow: function(e, el, code){
+          el.html(el.html()+' (State - '+code+')');
+        },
+        onRegionClick:function(event, code){
+          //console.log(gdpData[code]);
+          window.location.replace(gdpData[code]);
+        },
+      });
+    });
+  </script>
+</body>
+</html>

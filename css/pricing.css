@@ -1,0 +1,373 @@
+.ais_pricing_package {
+    background: #f2f2f2;
+}
+
+.ais_pricing_package h3 {
+
+    color: #0277BD;
+    font-weight: 700;
+    padding: 20px 0 0;
+
+}
+
+.ais_pricing_package p {
+    padding: 0 0 20px;
+    text-align: center;
+}
+
+.ais_pricing_package .col-lg-2,
+.ais_pricing_package .col-md-4 {
+    padding: 6px 8px !important;
+}
+
+.pricingTable {
+    padding-bottom: 30px;
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.pricingTable:hover {
+    box-shadow: 0 0 5px rgba(195, 67, 67, 0.3) inset, 0 0 15px -5px rgba(0, 0, 0, 0.6);
+}
+
+.pricingTable .pricingTable-header {
+    padding: 20px 15px 45px;
+    background: #66ce04;
+    -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 0, 0 0, 0 60%);
+    clip-path: polygon(50% 100%, 100% 60%, 100% 0, 0 0, 0 60%);
+    position: relative;
+}
+
+.pricingTable .pricingTable-header:before {
+    content: "";
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    right: -80%;
+    top: -105%;
+    background: repeating-radial-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2) 20%);
+    transition: all 0.5s ease 0s;
+}
+
+.pricingTable:hover .pricingTable-header:before {
+    right: 40%;
+}
+
+.pricingTable .title {
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+}
+
+.pricingTable .price-value {
+    display: block;
+    font-size: 25px;
+    color: #000;
+    margin: 0 0 20px 0;
+    transition: all 0.3s ease 0s;
+}
+
+.pricingTable .pricing-content {
+    padding: 10px 5px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pricingTable .pricing-content li {
+    font-size: 14px;
+    color: #909090;
+    line-height: 30px;
+    font-family: 'Signika', sans-serif;
+    text-transform: capitalize;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 8px;
+    position: relative;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.pricingTable .pricing-content li:last-child {
+    border-bottom: none;
+}
+
+.pricingTable .pricing-content li i {
+    color: #66ce04;
+}
+
+.pricingTable .pricingTable-signup {
+    display: block;
+    padding: 10px 0;
+    margin: 0 25px;
+    border-radius: 10px;
+    background: #66ce04;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.pricingTable .pricingTable-signup:hover {
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7), 0 0 0 3px rgba(255, 255, 255, 0.5) inset;
+}
+
+.pricingTable .pricingTable-signup:before {
+    content: "";
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: repeating-radial-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2) 20%);
+    position: absolute;
+    top: -180%;
+    right: -40%;
+    transition: all 0.8s ease 0s;
+}
+
+.pricingTable .pricingTable-signup:hover:before {
+    right: 40%;
+}
+
+.pricingTable.blue .pricingTable-header,
+.pricingTable.blue .pricingTable-signup {
+    background: #15b8f3;
+}
+
+.pricingTable.blue .pricing-content li i {
+    color: #15b8f3;
+}
+
+.pricingTable.pink .pricingTable-header,
+.pricingTable.pink .pricingTable-signup {
+    background: #f03c79;
+}
+
+.pricingTable.pink .pricing-content li i {
+    color: #f03c79;
+}
+
+@media only screen and (max-width: 990px) {
+    .pricingTable {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .pricingTable {
+        margin: 0;
+    }
+
+    .pricingTable .pricing-content li {
+        font-size: 15px;
+    }
+}
+
+/* 
+===============================================================================================
+         ************************* Student Pricing Table **************************
+===============================================================================================
+*/
+.demo_stu {
+    background-color: #f2f2f2;
+}
+.demo_stu h3 {
+
+    color: #0277BD;
+    font-weight: 700;
+    padding: 20px 0 0;
+
+}
+.stu_pricingTable {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+.stu_pricingTable:after {
+    content: '';
+    background-color: #008BA8;
+    width: 100%;
+    height: 10px;
+    margin: 0 0 7px;
+    display: block;
+}
+
+.stu_pricingTable .stu_pricingTable-header {
+    color: #fff;
+    background: linear-gradient(to bottom, #76B1CB 45%, #015C91 50%);
+    padding: 20px 0 25px;
+}
+
+.stu_pricingTable .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.stu_pricingTable .price-value {
+    color: #fff;
+    background: #008BA8;
+    font-weight: 600;
+    padding: 10px 0;
+    margin: 0 0 15px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+}
+
+.stu_pricingTable .amount {
+    font-size: 35px;
+    line-height: 70px;
+}
+
+.stu_pricingTable .amount-sm {
+    font-size: 25px;
+    vertical-align: top;
+}
+
+.stu_pricingTable .currency {
+    font-size: 30px;
+    line-height: 50px;
+    vertical-align: top;
+    margin: 0 0 0 -3px;
+}
+
+.stu_pricingTable .pricing-content {
+    color: #909090;
+    font-family: 'Signika', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    line-height: 40px;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0 0 15px;
+    list-style: none;
+    display: inline-block;
+}
+
+.stu_pricingTable .pricing-content i {
+    font-size: 16px;
+    color: #008BA8;
+}
+
+.stu_pricingTable .stu_pricingTable-signup {
+    color: #fff;
+    background: linear-gradient(to bottom, #015C91, #008BA8);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 50%;
+    padding: 5px;
+    margin: 0 auto 20px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
+}
+
+.stu_pricingTable .stu_pricingTable-signup:hover {
+    transform: translateY(-6px);
+}
+
+.stu_pricingTable .stu_pricingTable-signup:after {
+    content: "";
+    background: radial-gradient(ellipse at center center, rgba(1, 92, 145, 0.49) 0%, rgba(0, 0, 0, 0) 80%);
+    height: 10px;
+    left: 5%;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    width: 90%;
+    z-index: -1;
+    transition-duration: 0.3s;
+}
+
+.stu_pricingTable .stu_pricingTable-signup:hover:after {
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+.stu_pricingTable.red:after {
+    background-color: #E66102;
+}
+
+.stu_pricingTable.red .stu_pricingTable-header {
+    background: linear-gradient(to bottom, #EB9478 45%, #D32A00 50%);
+}
+
+.stu_pricingTable.red .pricing-content i {
+    color: #E66102 !important;
+}
+
+.stu_pricingTable.red .price-value {
+    background: #E66102;
+}
+
+.stu_pricingTable.red .stu_pricingTable-signup {
+    background: linear-gradient(to bottom, #D32A00, #E66102);
+}
+
+.stu_pricingTable.red .stu_pricingTable-signup:after {
+    background: radial-gradient(ellipse at center center, rgba(211, 42, 0, 0.49) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.stu_pricingTable.magenta:after {
+    background-color: #b71960;
+}
+
+.stu_pricingTable.magenta .stu_pricingTable-header {
+    background: linear-gradient(to bottom, #CF6B83 45%, #990023 50%);
+}
+
+.stu_pricingTable.magenta .price-value {
+    background: #b71960;
+}
+
+.stu_pricingTable.magenta .stu_pricingTable-signup {
+    background: linear-gradient(to bottom, #990023, #b71960);
+}
+
+.stu_pricingTable.magenta .stu_pricingTable-signup:after {
+    background: radial-gradient(ellipse at center center, rgba(152, 0, 30, 0.49) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.stu_pricingTable.magenta .pricing-content i {
+    color: #b71960 !important;
+}
+
+.stu_pricingTable.prime:after {
+    background-color: #056ac1;
+}
+
+.stu_pricingTable.prime .stu_pricingTable-header {
+    background: linear-gradient(to bottom, #ab35e8 45%, #620094 50%);
+}
+
+.stu_pricingTable.prime .price-value {
+    background: #056ac1;
+}
+
+.stu_pricingTable.prime .stu_pricingTable-signup {
+    background: linear-gradient(to bottom, #620094, #a043c7);
+}
+
+.stu_pricingTable.prime .stu_pricingTable-signup:after {
+    background: radial-gradient(ellipse at center center, rgba(152, 0, 30, 0.49) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.stu_pricingTable.prime .pricing-content i {
+    color: #056ac1 !important;
+}
+
+@media only screen and (max-width: 990px) {
+    .stu_pricingTable {
+        margin: 0 0 30px;
+    }
+}
