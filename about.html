@@ -255,7 +255,8 @@
                         <li>
                             <i class="fa fa-home" aria-hidden="true"></i>
                             <p id="add">
-                                1-C & 1-D, Venkitasamy Street,<br> Opp to Cheran Nagar, <br>Kavundampalayam,<br>Coimbatore – 641030.</p>
+                                69A DB Road,RS Puram,</br>
+                                Coimbatore - 641002.</p>
                         </li>
                         <li> <i class="fa fa-phone" aria-hidden="true"></i> 0422-4371212</li>
                         <li> <i class="fa fa-envelope" aria-hidden="true"></i> support@schoolsoftwares.com </li>
@@ -396,6 +397,15 @@
             }
         });
     }
+        $( "input[name='email']" ).on("change",function(){
+        $("input[name='_gotcha']").val("");        
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf', {action: 'submit'}).then(function(token) {
+                /*console.log( "token \n " + token);*/
+                $("input[name='_gotcha']").val(token);
+            });
+        });      
+    });
     </script>
     <script type="text/javascript">
     window.$zopim || (function(d, s) {
