@@ -112,7 +112,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <img src="images/c-enquiry-icon.png" alt="Enquiry icon" title="IAS -Enquiry" class="img-responsive">
                         <h3> Enquiry Now! </h3>
-                        <form action="https://e.genuineinfotech.com/" method="POST" class="home_contact" name="Enquiry">
+                        <!--form action="" method="POST" class="home_contact" name="Enquiry">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
                                     <div class="form-group">
@@ -205,8 +205,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                        <br>
+                        </form-->
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctb62LlUrzwesivqji2nkkaQv5los5Uff1NbeXmqKw-I2mDA/viewform?embedded=true" width="100%" height="1217" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
                 </div>
             </div>
@@ -316,16 +316,7 @@
             if ($('.navbar').hasClass("fixed-top"))
                 $('.navbar').toggleClass('fixed-top');
         }
-    });
-    $( "input[name='email']" ).on("change",function(){
-        $("input[name='_gotcha']").val("");        
-        grecaptcha.ready(function() {
-            grecaptcha.execute('6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf', {action: 'submit'}).then(function(token) {
-                /*console.log( "token \n " + token);*/
-                $("input[name='_gotcha']").val(token);
-            });
-        });      
-    });
+    });    
     </script>
 </body>
 </html>
